@@ -16,7 +16,7 @@ function NeoSection() {
 	const fetchNeoData = async () => {
 		try {
 			setLoading(true);
-			const response = await axios.get(`${API_URL}/api/neoz`);
+			const response = await axios.get(`${API_URL}/api/neo`);
 			setNeoData(response.data);
 			setError(null);
 		} catch (err) {
